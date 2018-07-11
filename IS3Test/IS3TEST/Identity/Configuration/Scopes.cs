@@ -30,10 +30,10 @@ namespace Identity.Configuration
                         Description = "Access to a sample API",
                         Type = ScopeType.Resource,
 
-                        //Claims = new List<ScopeClaim>
-                        //{
-                        //    new ScopeClaim("role")
-                        //},
+                        Claims = new List<ScopeClaim>
+                        {
+                            new ScopeClaim("role")
+                        },
                         ScopeSecrets = new List<Secret>
                         {
                            new Secret("dmsecret".Sha256())
